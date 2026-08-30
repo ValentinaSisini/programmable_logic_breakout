@@ -1,4 +1,4 @@
-set_property SRC_FILE_INFO {cfile:/home/valentina/Documents/Repo/circuit_breakout/vhdl_breakout/vhdl_breakout.srcs/constrs_1/imports/valentina/basys3_paddle_vga.xdc rfile:../../../vhdl_breakout.srcs/constrs_1/imports/valentina/basys3_paddle_vga.xdc id:1} [current_design]
+set_property SRC_FILE_INFO {cfile:/home/valentina/Documents/Repo/circuit_breakout/src/vhdl_breakout/vhdl_breakout.srcs/constrs_1/imports/valentina/basys3_paddle_vga.xdc rfile:../../../vhdl_breakout.srcs/constrs_1/imports/valentina/basys3_paddle_vga.xdc id:1} [current_design]
 set_property src_info {type:XDC file:1 line:5 export:INPUT save:INPUT read:READ} [current_design]
 set_property -dict { PACKAGE_PIN W5 IOSTANDARD LVCMOS33 } [get_ports clk]
 set_property src_info {type:XDC file:1 line:9 export:INPUT save:INPUT read:READ} [current_design]

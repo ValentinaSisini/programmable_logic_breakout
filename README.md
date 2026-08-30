@@ -1,6 +1,6 @@
-# circuit_breakout
+# Programmable Logic Breakout
 
-`circuit_breakout` is a hands-on FPGA project built around a simple idea: understand a digital system by constructing it step by step, from the first logic sketch to a circuit running on real hardware.
+`Programmable Logic Breakout` is a hands-on FPGA project built around a simple idea: understand a digital system by constructing it step by step, from the first logic sketch to a circuit running on real hardware.
 
 The project uses a **Digilent Basys 3** board with an **AMD/Xilinx Artix-7 FPGA** and develops a Breakout-style video system incrementally. Rather than treating VHDL as ordinary software, each function is first understood as a digital circuit, tested in simulation, translated into VHDL, implemented with Vivado, and finally verified on the FPGA.
 

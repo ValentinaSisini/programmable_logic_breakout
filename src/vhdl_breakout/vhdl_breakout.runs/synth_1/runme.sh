@@ -21,7 +21,7 @@ else
 fi
 export LD_LIBRARY_PATH
 
-HD_PWD='/home/valentina/Documents/Repo/circuit_breakout/vhdl_breakout/vhdl_breakout.runs/synth_1'
+HD_PWD='/home/valentina/Documents/Repo/circuit_breakout/src/vhdl_breakout/vhdl_breakout.runs/synth_1'
 cd "$HD_PWD"
 
 HD_LOG=runme.log

@@ -3,23 +3,23 @@
 # SW Build 5239630 on Fri Nov 08 22:34:34 MST 2024
 # IP Build 5239520 on Sun Nov 10 16:12:51 MST 2024
 # SharedData Build 5239561 on Fri Nov 08 14:39:27 MST 2024
-# Start of session at: Sat Aug 29 16:19:20 2026
-# Process ID         : 311813
-# Current directory  : /home/valentina/Documents/Repo/circuit_breakout/vhdl_breakout/vhdl_breakout.runs/synth_1
+# Start of session at: Sun Aug 30 18:19:04 2026
+# Process ID         : 41692
+# Current directory  : /home/valentina/Documents/Repo/circuit_breakout/src/vhdl_breakout/vhdl_breakout.runs/synth_1
 # Command line       : vivado -log breakout_vga_top.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source breakout_vga_top.tcl
-# Log file           : /home/valentina/Documents/Repo/circuit_breakout/vhdl_breakout/vhdl_breakout.runs/synth_1/breakout_vga_top.vds
-# Journal file       : /home/valentina/Documents/Repo/circuit_breakout/vhdl_breakout/vhdl_breakout.runs/synth_1/vivado.jou
+# Log file           : /home/valentina/Documents/Repo/circuit_breakout/src/vhdl_breakout/vhdl_breakout.runs/synth_1/breakout_vga_top.vds
+# Journal file       : /home/valentina/Documents/Repo/circuit_breakout/src/vhdl_breakout/vhdl_breakout.runs/synth_1/vivado.jou
 # Running On         : pcvalentina
 # Platform           : Ubuntu
 # Operating System   : Ubuntu 24.04.3 LTS
 # Processor Detail   : 13th Gen Intel(R) Core(TM) i7-13620H
-# CPU Frequency      : 1656.727 MHz
+# CPU Frequency      : 836.861 MHz
 # CPU Physical cores : 10
 # CPU Logical cores  : 16
 # Host memory        : 16440 MB
 # Swap memory        : 4294 MB
 # Total Virtual      : 20735 MB
-# Available Virtual  : 9033 MB
+# Available Virtual  : 12049 MB
 #-----------------------------------------------------------
 source breakout_vga_top.tcl -notrace
 Command: synth_design -top breakout_vga_top -part xc7a35tcpg236-1
@@ -29,70 +29,70 @@ INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a35t
 INFO: [Device 21-403] Loading part xc7a35tcpg236-1
 INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 7 processes.
 INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
-INFO: [Synth 8-7075] Helper process launched with PID 311871
+INFO: [Synth 8-7075] Helper process launched with PID 41763
 ---------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 1836.066 ; gain = 400.855 ; free physical = 192 ; free virtual = 7632
+Starting RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 1836.023 ; gain = 400.855 ; free physical = 323 ; free virtual = 10197
 ---------------------------------------------------------------------------------
-INFO: [Synth 8-638] synthesizing module 'breakout_vga_top' [/home/valentina/Documents/Repo/circuit_breakout/vhdl_breakout/vhdl_breakout.srcs/sources_1/imports/valentina/breakout_vga_top.vhd:65]
-INFO: [Synth 8-638] synthesizing module 'button_onepulse' [/home/valentina/Documents/Repo/circuit_breakout/vhdl_breakout/vhdl_breakout.srcs/sources_1/imports/valentina/button_onepulse.vhd:17]
+INFO: [Synth 8-638] synthesizing module 'breakout_vga_top' [/home/valentina/Documents/Repo/circuit_breakout/src/vhdl_breakout/vhdl_breakout.srcs/sources_1/imports/valentina/breakout_vga_top.vhd:65]
+INFO: [Synth 8-638] synthesizing module 'button_onepulse' [/home/valentina/Documents/Repo/circuit_breakout/src/vhdl_breakout/vhdl_breakout.srcs/sources_1/imports/valentina/button_onepulse.vhd:17]
 	Parameter DEBOUNCE_CYCLES bound to: 1000000 - type: integer 
-INFO: [Synth 8-256] done synthesizing module 'button_onepulse' (0#1) [/home/valentina/Documents/Repo/circuit_breakout/vhdl_breakout/vhdl_breakout.srcs/sources_1/imports/valentina/button_onepulse.vhd:17]
-INFO: [Synth 8-638] synthesizing module 'counter_74193_style' [/home/valentina/Documents/Repo/circuit_breakout/vhdl_breakout/vhdl_breakout.srcs/sources_1/imports/valentina/counter_74193_style.vhd:21]
-INFO: [Synth 8-256] done synthesizing module 'counter_74193_style' (0#1) [/home/valentina/Documents/Repo/circuit_breakout/vhdl_breakout/vhdl_breakout.srcs/sources_1/imports/valentina/counter_74193_style.vhd:21]
-INFO: [Synth 8-638] synthesizing module 'sevenseg_hex' [/home/valentina/Documents/Repo/circuit_breakout/vhdl_breakout/vhdl_breakout.srcs/sources_1/imports/valentina/sevenseg_hex.vhd:14]
-INFO: [Synth 8-256] done synthesizing module 'sevenseg_hex' (0#1) [/home/valentina/Documents/Repo/circuit_breakout/vhdl_breakout/vhdl_breakout.srcs/sources_1/imports/valentina/sevenseg_hex.vhd:14]
-INFO: [Synth 8-256] done synthesizing module 'breakout_vga_top' (0#1) [/home/valentina/Documents/Repo/circuit_breakout/vhdl_breakout/vhdl_breakout.srcs/sources_1/imports/valentina/breakout_vga_top.vhd:65]
+INFO: [Synth 8-256] done synthesizing module 'button_onepulse' (0#1) [/home/valentina/Documents/Repo/circuit_breakout/src/vhdl_breakout/vhdl_breakout.srcs/sources_1/imports/valentina/button_onepulse.vhd:17]
+INFO: [Synth 8-638] synthesizing module 'counter_74193_style' [/home/valentina/Documents/Repo/circuit_breakout/src/vhdl_breakout/vhdl_breakout.srcs/sources_1/imports/valentina/counter_74193_style.vhd:21]
+INFO: [Synth 8-256] done synthesizing module 'counter_74193_style' (0#1) [/home/valentina/Documents/Repo/circuit_breakout/src/vhdl_breakout/vhdl_breakout.srcs/sources_1/imports/valentina/counter_74193_style.vhd:21]
+INFO: [Synth 8-638] synthesizing module 'sevenseg_hex' [/home/valentina/Documents/Repo/circuit_breakout/src/vhdl_breakout/vhdl_breakout.srcs/sources_1/imports/valentina/sevenseg_hex.vhd:14]
+INFO: [Synth 8-256] done synthesizing module 'sevenseg_hex' (0#1) [/home/valentina/Documents/Repo/circuit_breakout/src/vhdl_breakout/vhdl_breakout.srcs/sources_1/imports/valentina/sevenseg_hex.vhd:14]
+INFO: [Synth 8-256] done synthesizing module 'breakout_vga_top' (0#1) [/home/valentina/Documents/Repo/circuit_breakout/src/vhdl_breakout/vhdl_breakout.srcs/sources_1/imports/valentina/breakout_vga_top.vhd:65]
 WARNING: [Synth 8-3917] design breakout_vga_top has port an[3] driven by constant 1
 WARNING: [Synth 8-3917] design breakout_vga_top has port an[2] driven by constant 1
 WARNING: [Synth 8-3917] design breakout_vga_top has port an[1] driven by constant 1
 WARNING: [Synth 8-3917] design breakout_vga_top has port an[0] driven by constant 0
 WARNING: [Synth 8-3917] design breakout_vga_top has port dp driven by constant 1
 ---------------------------------------------------------------------------------
-Finished RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 1908.035 ; gain = 472.824 ; free physical = 180 ; free virtual = 7550
+Finished RTL Elaboration : Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 1907.961 ; gain = 472.793 ; free physical = 543 ; free virtual = 9984
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 1925.848 ; gain = 490.637 ; free physical = 176 ; free virtual = 7547
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 1925.773 ; gain = 490.605 ; free physical = 538 ; free virtual = 9978
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 1925.848 ; gain = 490.637 ; free physical = 176 ; free virtual = 7547
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 1925.773 ; gain = 490.605 ; free physical = 538 ; free virtual = 9978
 ---------------------------------------------------------------------------------
-Netlist sorting complete. Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00 . Memory (MB): peak = 1925.848 ; gain = 0.000 ; free physical = 176 ; free virtual = 7547
+Netlist sorting complete. Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00 . Memory (MB): peak = 1925.773 ; gain = 0.000 ; free physical = 538 ; free virtual = 9976
 INFO: [Project 1-570] Preparing netlist for logic optimization
 
 Processing XDC Constraints
 Initializing timing engine
-Parsing XDC File [/home/valentina/Documents/Repo/circuit_breakout/vhdl_breakout/vhdl_breakout.srcs/constrs_1/imports/valentina/basys3_paddle_vga.xdc]
-Finished Parsing XDC File [/home/valentina/Documents/Repo/circuit_breakout/vhdl_breakout/vhdl_breakout.srcs/constrs_1/imports/valentina/basys3_paddle_vga.xdc]
-INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [/home/valentina/Documents/Repo/circuit_breakout/vhdl_breakout/vhdl_breakout.srcs/constrs_1/imports/valentina/basys3_paddle_vga.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/breakout_vga_top_propImpl.xdc].
+Parsing XDC File [/home/valentina/Documents/Repo/circuit_breakout/src/vhdl_breakout/vhdl_breakout.srcs/constrs_1/imports/valentina/basys3_paddle_vga.xdc]
+Finished Parsing XDC File [/home/valentina/Documents/Repo/circuit_breakout/src/vhdl_breakout/vhdl_breakout.srcs/constrs_1/imports/valentina/basys3_paddle_vga.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [/home/valentina/Documents/Repo/circuit_breakout/src/vhdl_breakout/vhdl_breakout.srcs/constrs_1/imports/valentina/basys3_paddle_vga.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/breakout_vga_top_propImpl.xdc].
 Resolution: To avoid this warning, move constraints listed in [.Xil/breakout_vga_top_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
 Completed Processing XDC Constraints
 
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2070.598 ; gain = 0.000 ; free physical = 211 ; free virtual = 7541
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2072.523 ; gain = 0.000 ; free physical = 367 ; free virtual = 9838
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
-Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2070.598 ; gain = 0.000 ; free physical = 211 ; free virtual = 7541
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2072.523 ; gain = 0.000 ; free physical = 367 ; free virtual = 9838
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:00:13 ; elapsed = 00:00:14 . Memory (MB): peak = 2070.598 ; gain = 635.387 ; free physical = 175 ; free virtual = 7499
+Finished Constraint Validation : Time (s): cpu = 00:00:14 ; elapsed = 00:00:15 . Memory (MB): peak = 2072.523 ; gain = 637.355 ; free physical = 420 ; free virtual = 9874
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Loading Part and Timing Information
 ---------------------------------------------------------------------------------
 Loading part: xc7a35tcpg236-1
 ---------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:00:14 ; elapsed = 00:00:14 . Memory (MB): peak = 2078.602 ; gain = 643.391 ; free physical = 175 ; free virtual = 7500
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:14 ; elapsed = 00:00:15 . Memory (MB): peak = 2080.527 ; gain = 645.359 ; free physical = 420 ; free virtual = 9874
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying 'set_property' XDC Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:14 ; elapsed = 00:00:14 . Memory (MB): peak = 2078.602 ; gain = 643.391 ; free physical = 175 ; free virtual = 7500
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:14 ; elapsed = 00:00:15 . Memory (MB): peak = 2080.527 ; gain = 645.359 ; free physical = 424 ; free virtual = 9878
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:14 ; elapsed = 00:00:14 . Memory (MB): peak = 2078.602 ; gain = 643.391 ; free physical = 172 ; free virtual = 7498
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:15 ; elapsed = 00:00:15 . Memory (MB): peak = 2080.527 ; gain = 645.359 ; free physical = 420 ; free virtual = 9873
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start RTL Component Statistics 
@@ -134,25 +134,25 @@ WARNING: [Synth 8-3917] design breakout_vga_top has port an[1] driven by constan
 WARNING: [Synth 8-3917] design breakout_vga_top has port an[0] driven by constant 0
 WARNING: [Synth 8-3917] design breakout_vga_top has port dp driven by constant 1
 ---------------------------------------------------------------------------------
-Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:16 ; elapsed = 00:00:16 . Memory (MB): peak = 2078.602 ; gain = 643.391 ; free physical = 213 ; free virtual = 7544
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:17 ; elapsed = 00:00:17 . Memory (MB): peak = 2080.527 ; gain = 645.359 ; free physical = 399 ; free virtual = 9858
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying XDC Timing Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:22 ; elapsed = 00:00:23 . Memory (MB): peak = 2104.602 ; gain = 669.391 ; free physical = 212 ; free virtual = 7456
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:22 ; elapsed = 00:00:22 . Memory (MB): peak = 2104.527 ; gain = 669.359 ; free physical = 408 ; free virtual = 9881
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Timing Optimization
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:00:22 ; elapsed = 00:00:23 . Memory (MB): peak = 2137.648 ; gain = 702.438 ; free physical = 181 ; free virtual = 7426
+Finished Timing Optimization : Time (s): cpu = 00:00:22 ; elapsed = 00:00:23 . Memory (MB): peak = 2137.574 ; gain = 702.406 ; free physical = 376 ; free virtual = 9849
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Technology Mapping
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:00:23 ; elapsed = 00:00:23 . Memory (MB): peak = 2145.656 ; gain = 710.445 ; free physical = 168 ; free virtual = 7414
+Finished Technology Mapping : Time (s): cpu = 00:00:22 ; elapsed = 00:00:23 . Memory (MB): peak = 2145.582 ; gain = 710.414 ; free physical = 361 ; free virtual = 9834
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start IO Insertion
@@ -170,37 +170,37 @@ Start Final Netlist Cleanup
 Finished Final Netlist Cleanup
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:00:26 ; elapsed = 00:00:27 . Memory (MB): peak = 2278.469 ; gain = 843.258 ; free physical = 209 ; free virtual = 7320
+Finished IO Insertion : Time (s): cpu = 00:00:25 ; elapsed = 00:00:26 . Memory (MB): peak = 2278.395 ; gain = 843.227 ; free physical = 651 ; free virtual = 9933
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:00:26 ; elapsed = 00:00:27 . Memory (MB): peak = 2278.469 ; gain = 843.258 ; free physical = 209 ; free virtual = 7320
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:25 ; elapsed = 00:00:26 . Memory (MB): peak = 2278.395 ; gain = 843.227 ; free physical = 651 ; free virtual = 9933
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Rebuilding User Hierarchy
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:26 ; elapsed = 00:00:27 . Memory (MB): peak = 2278.469 ; gain = 843.258 ; free physical = 209 ; free virtual = 7319
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:25 ; elapsed = 00:00:26 . Memory (MB): peak = 2278.395 ; gain = 843.227 ; free physical = 651 ; free virtual = 9933
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Ports
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Ports : Time (s): cpu = 00:00:26 ; elapsed = 00:00:27 . Memory (MB): peak = 2278.469 ; gain = 843.258 ; free physical = 209 ; free virtual = 7319
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:25 ; elapsed = 00:00:26 . Memory (MB): peak = 2278.395 ; gain = 843.227 ; free physical = 651 ; free virtual = 9933
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:26 ; elapsed = 00:00:27 . Memory (MB): peak = 2278.469 ; gain = 843.258 ; free physical = 209 ; free virtual = 7319
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:25 ; elapsed = 00:00:26 . Memory (MB): peak = 2278.395 ; gain = 843.227 ; free physical = 651 ; free virtual = 9933
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Nets
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Nets : Time (s): cpu = 00:00:26 ; elapsed = 00:00:27 . Memory (MB): peak = 2278.469 ; gain = 843.258 ; free physical = 209 ; free virtual = 7319
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:25 ; elapsed = 00:00:26 . Memory (MB): peak = 2278.395 ; gain = 843.227 ; free physical = 651 ; free virtual = 9933
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Writing Synthesis Report
@@ -229,18 +229,18 @@ Report Cell Usage:
 |11    |OBUF   |    26|
 +------+-------+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:00:26 ; elapsed = 00:00:27 . Memory (MB): peak = 2278.469 ; gain = 843.258 ; free physical = 209 ; free virtual = 7319
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:25 ; elapsed = 00:00:26 . Memory (MB): peak = 2278.395 ; gain = 843.227 ; free physical = 651 ; free virtual = 9933
 ---------------------------------------------------------------------------------
 Synthesis finished with 0 errors, 0 critical warnings and 6 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:00:24 ; elapsed = 00:00:25 . Memory (MB): peak = 2278.469 ; gain = 698.508 ; free physical = 201 ; free virtual = 7311
-Synthesis Optimization Complete : Time (s): cpu = 00:00:26 ; elapsed = 00:00:27 . Memory (MB): peak = 2278.477 ; gain = 843.258 ; free physical = 201 ; free virtual = 7311
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:23 ; elapsed = 00:00:24 . Memory (MB): peak = 2278.395 ; gain = 696.477 ; free physical = 650 ; free virtual = 9932
+Synthesis Optimization Complete : Time (s): cpu = 00:00:25 ; elapsed = 00:00:26 . Memory (MB): peak = 2278.402 ; gain = 843.227 ; free physical = 650 ; free virtual = 9932
 INFO: [Project 1-571] Translating synthesized netlist
-Netlist sorting complete. Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00 . Memory (MB): peak = 2278.477 ; gain = 0.000 ; free physical = 200 ; free virtual = 7313
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.01 . Memory (MB): peak = 2278.402 ; gain = 0.000 ; free physical = 646 ; free virtual = 9930
 INFO: [Netlist 29-17] Analyzing 19 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
 INFO: [Project 1-570] Preparing netlist for logic optimization
 INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2334.496 ; gain = 0.000 ; free physical = 351 ; free virtual = 7469
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2334.422 ; gain = 0.000 ; free physical = 815 ; free virtual = 10102
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
@@ -248,10 +248,10 @@ Synth Design complete | Checksum: 33a7e511
 INFO: [Common 17-83] Releasing license: Synthesis
 23 Infos, 11 Warnings, 0 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:00:35 ; elapsed = 00:00:33 . Memory (MB): peak = 2334.496 ; gain = 899.293 ; free physical = 349 ; free virtual = 7465
-INFO: [Common 17-2834] synth_design peak Physical Memory [PSS] (MB): overall = 1474.089; main = 1474.089; forked = 266.436
-INFO: [Common 17-2834] synth_design peak Virtual Memory [VSS] (MB): overall = 2995.629; main = 2334.500; forked = 917.023
-Write ShapeDB Complete: Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00 . Memory (MB): peak = 2358.508 ; gain = 0.000 ; free physical = 349 ; free virtual = 7464
-INFO: [Common 17-1381] The checkpoint '/home/valentina/Documents/Repo/circuit_breakout/vhdl_breakout/vhdl_breakout.runs/synth_1/breakout_vga_top.dcp' has been generated.
+synth_design: Time (s): cpu = 00:00:35 ; elapsed = 00:00:32 . Memory (MB): peak = 2334.422 ; gain = 899.262 ; free physical = 794 ; free virtual = 10090
+INFO: [Common 17-2834] synth_design peak Physical Memory [PSS] (MB): overall = 1468.329; main = 1468.329; forked = 265.118
+INFO: [Common 17-2834] synth_design peak Virtual Memory [VSS] (MB): overall = 2997.555; main = 2334.426; forked = 917.023
+Write ShapeDB Complete: Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00 . Memory (MB): peak = 2358.434 ; gain = 0.000 ; free physical = 794 ; free virtual = 10090
+INFO: [Common 17-1381] The checkpoint '/home/valentina/Documents/Repo/circuit_breakout/src/vhdl_breakout/vhdl_breakout.runs/synth_1/breakout_vga_top.dcp' has been generated.
 INFO: [Vivado 12-24828] Executing command : report_utilization -file breakout_vga_top_utilization_synth.rpt -pb breakout_vga_top_utilization_synth.pb
-INFO: [Common 17-206] Exiting Vivado at Sat Aug 29 16:19:56 2026...
+INFO: [Common 17-206] Exiting Vivado at Sun Aug 30 18:19:39 2026...

@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenRun Id="synth_1" LaunchPart="xc7a35tcpg236-1" LaunchTime="1788013156">
+  <File Type="VDS-TIMINGSUMMARY" Name="breakout_vga_top_timing_summary_synth.rpt"/>
+  <File Type="RDS-DCP" Name="breakout_vga_top.dcp"/>
+  <File Type="RDS-UTIL-PB" Name="breakout_vga_top_utilization_synth.pb"/>
+  <File Type="RDS-UTIL" Name="breakout_vga_top_utilization_synth.rpt"/>
+  <File Type="VDS-TIMING-PB" Name="breakout_vga_top_timing_summary_synth.pb"/>
+  <File Type="PA-TCL" Name="breakout_vga_top.tcl"/>
+  <File Type="REPORTS-TCL" Name="breakout_vga_top_reports.tcl"/>
+  <File Type="RDS-RDS" Name="breakout_vga_top.vds"/>
+  <File Type="RDS-PROPCONSTRS" Name="breakout_vga_top_drc_synth.rpt"/>
+  <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1" RelGenDir="$PGENDIR/sources_1">
+    <Filter Type="Srcs"/>
+    <File Path="$PSRCDIR/sources_1/imports/valentina/button_onepulse.vhd">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../../button_onepulse.vhd"/>
+        <Attr Name="ImportTime" Val="1786715792"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/valentina/counter_74193_style.vhd">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../../counter_74193_style.vhd"/>
+        <Attr Name="ImportTime" Val="1786715790"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/valentina/sevenseg_hex.vhd">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../../sevenseg_hex.vhd"/>
+        <Attr Name="ImportTime" Val="1786715797"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/valentina/breakout_vga_top.vhd">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../../breakout_vga_top.vhd"/>
+        <Attr Name="ImportTime" Val="1787911436"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="DesignMode" Val="RTL"/>
+      <Option Name="TopModule" Val="breakout_vga_top"/>
+      <Option Name="TopAutoSet" Val="TRUE"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="constrs_in" Type="Constrs" RelSrcDir="$PSRCDIR/constrs_1" RelGenDir="$PGENDIR/constrs_1">
+    <Filter Type="Constrs"/>
+    <File Path="$PSRCDIR/constrs_1/imports/valentina/basys3_paddle_vga.xdc">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../../basys3_paddle_vga.xdc"/>
+        <Attr Name="ImportTime" Val="1787911429"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="ConstrsType" Val="XDC"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="utils" Type="Utils" RelSrcDir="$PSRCDIR/utils_1" RelGenDir="$PGENDIR/utils_1">
+    <Filter Type="Utils"/>
+    <Config>
+      <Option Name="TopAutoSet" Val="TRUE"/>
+    </Config>
+  </FileSet>
+  <Strategy Version="1" Minor="2">
+    <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2024">
+      <Desc>Vivado Synthesis Defaults</Desc>
+    </StratHandle>
+    <Step Id="synth_design"/>
+  </Strategy>
+</GenRun>

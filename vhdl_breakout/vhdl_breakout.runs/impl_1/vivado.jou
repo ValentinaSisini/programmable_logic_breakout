@@ -1,0 +1,24 @@
+#-----------------------------------------------------------
+# Vivado v2024.2 (64-bit)
+# SW Build 5239630 on Fri Nov 08 22:34:34 MST 2024
+# IP Build 5239520 on Sun Nov 10 16:12:51 MST 2024
+# SharedData Build 5239561 on Fri Nov 08 14:39:27 MST 2024
+# Start of session at: Sat Aug 29 16:21:24 2026
+# Process ID         : 312706
+# Current directory  : /home/valentina/Documents/Repo/circuit_breakout/vhdl_breakout/vhdl_breakout.runs/impl_1
+# Command line       : vivado -log breakout_vga_top.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source breakout_vga_top.tcl -notrace
+# Log file           : /home/valentina/Documents/Repo/circuit_breakout/vhdl_breakout/vhdl_breakout.runs/impl_1/breakout_vga_top.vdi
+# Journal file       : /home/valentina/Documents/Repo/circuit_breakout/vhdl_breakout/vhdl_breakout.runs/impl_1/vivado.jou
+# Running On         : pcvalentina
+# Platform           : Ubuntu
+# Operating System   : Ubuntu 24.04.3 LTS
+# Processor Detail   : 13th Gen Intel(R) Core(TM) i7-13620H
+# CPU Frequency      : 859.761 MHz
+# CPU Physical cores : 10
+# CPU Logical cores  : 16
+# Host memory        : 16440 MB
+# Swap memory        : 4294 MB
+# Total Virtual      : 20735 MB
+# Available Virtual  : 8369 MB
+#-----------------------------------------------------------
+source breakout_vga_top.tcl -notrace

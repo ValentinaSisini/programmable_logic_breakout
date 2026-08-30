@@ -33,11 +33,7 @@ Open Vivado and choose **Create Project** / **New Project**.
 
 <img src="images/01-new-project.png" width="520" alt="New Project wizard">
 
-Enter a project name and choose the folder where the project will be stored. It is usually convenient to keep **Create project subdirectory** enabled, so Vivado creates a dedicated subfolder for the project.
-
-<img src="images/02-project-name.png" width="520" alt="Project name and location">
-
-Click **Next**.
+Enter a project name and choose the folder where the project will be stored. It is usually convenient to keep **Create project subdirectory** enabled, so Vivado creates a dedicated subfolder for the project. Click **Next**.
 
 <img src="images/03-project-name-next.png" width="520" alt="Project name next">
 

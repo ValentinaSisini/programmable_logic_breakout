@@ -1,0 +1,369 @@
+<!doctype html>
+<html lang="it">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#0b0c0f">
+  <meta name="description" content="Programmable Logic Breakout — un progetto hardware-first: dal circuito pensato su carta alla FPGA, fino al pixel sullo schermo.">
+  <title>Programmable Logic Breakout</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="noise" aria-hidden="true"></div>
+
+  <header class="site-header">
+    <a class="logo" href="#top">
+      <span class="logo-box">PLB</span>
+      <span class="logo-text">Programmable Logic Breakout</span>
+    </a>
+    <nav class="nav">
+      <a href="#idea">Idea</a>
+      <a href="#metodo">Metodo</a>
+      <a href="#caso">Caso</a>
+      <a href="#percorso">Percorso</a>
+      <a href="#video">Video</a>
+    </nav>
+  </header>
+
+  <main id="top">
+    <section class="hero shell">
+      <div class="hero-copy">
+        <div class="kicker">
+          <span>1976</span><i></i><span>2026</span>
+          <em>50 anni di Breakout</em>
+        </div>
+
+        <h1>
+          Programmable<br>
+          <span>Logic</span> Breakout
+        </h1>
+
+        <p class="hero-lead">
+          Un videogioco ricostruito pensando prima alla <strong>macchina fisica</strong>
+          che deve farlo esistere.
+        </p>
+
+        <p class="hero-note">
+          Funzione → circuito su carta → Digital → VHDL → FPGA → VGA → pixel.
+        </p>
+
+        <div class="hero-cta">
+          <a class="btn btn-primary" href="#idea">Entra nel progetto</a>
+          <a class="btn btn-ghost" href="#video">Guarda il video</a>
+        </div>
+      </div>
+
+      <div class="hero-machine" aria-label="Rappresentazione grafica di Breakout">
+        <div class="monitor">
+          <div class="screen">
+            <div class="scanlines"></div>
+            <div class="brick-row r1">
+              <i></i><i></i><i></i><i></i><i></i><i></i>
+            </div>
+            <div class="brick-row r2">
+              <i></i><i></i><i></i><i></i><i></i><i></i>
+            </div>
+            <div class="brick-row r3">
+              <i></i><i></i><i></i><i></i><i></i><i></i>
+            </div>
+            <div class="ball"></div>
+            <div class="paddle"></div>
+            <div class="screen-label">LOGIC → VIDEO</div>
+          </div>
+          <div class="monitor-base"></div>
+        </div>
+
+        <div class="signal-strip">
+          <span>CLK</span>
+          <b></b>
+          <span>COUNTER</span>
+          <b></b>
+          <span>COMPARE</span>
+          <b></b>
+          <span>RGB</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="statement">
+      <div class="shell statement-inner">
+        <p class="mono-tag">THE QUESTION</p>
+        <h2>Quale circuito deve esistere perché questa cosa accada?</h2>
+      </div>
+    </section>
+
+    <section id="idea" class="shell section split">
+      <div class="section-index">01</div>
+      <div class="section-copy">
+        <p class="mono-tag">L'IDEA</p>
+        <h2>Non partiamo dal codice.</h2>
+        <p class="big-copy">
+          Per ogni comportamento del gioco ci fermiamo prima del VHDL e ragioniamo
+          come se dovessimo costruire davvero quella funzione con componenti logici.
+        </p>
+        <p>
+          Come si memorizza la posizione della racchetta? Come si rileva un bordo?
+          Come si cambia direzione? Come si scandiscono i pixel? Prima vengono
+          contatori, comparatori, registri, segnali di clock e logica di controllo.
+          Il VHDL arriva dopo: serve a descrivere una macchina che abbiamo già iniziato a pensare.
+        </p>
+      </div>
+      <aside class="pull-quote">
+        <span>“</span>
+        <p>Non vogliamo soltanto far funzionare Breakout. Vogliamo capire quale macchina lo fa funzionare.</p>
+      </aside>
+    </section>
+
+    <section id="metodo" class="section section-dark">
+      <div class="shell">
+        <div class="section-head">
+          <div>
+            <p class="mono-tag">IL METODO</p>
+            <h2>Sei passaggi. Una sola idea.</h2>
+          </div>
+          <p>
+            La stessa funzione attraversa rappresentazioni diverse,
+            ma deve rimanere riconoscibile dall'inizio alla fine.
+          </p>
+        </div>
+
+        <div class="method-line">
+          <article>
+            <small>01</small>
+            <div class="method-icon">?</div>
+            <h3>Funzione</h3>
+            <p>Definiamo il comportamento che vogliamo ottenere.</p>
+          </article>
+          <article>
+            <small>02</small>
+            <div class="method-icon">✎</div>
+            <h3>Carta</h3>
+            <p>Disegniamo componenti, segnali e relazioni.</p>
+          </article>
+          <article>
+            <small>03</small>
+            <div class="method-icon">▦</div>
+            <h3>Digital</h3>
+            <p>Costruiamo il circuito e ne verifichiamo la logica.</p>
+          </article>
+          <article>
+            <small>04</small>
+            <div class="method-icon">&lt;/&gt;</div>
+            <h3>VHDL</h3>
+            <p>Descriviamo l'hardware avendo in mente il circuito.</p>
+          </article>
+          <article>
+            <small>05</small>
+            <div class="method-icon">◇</div>
+            <h3>FPGA</h3>
+            <p>Sintesi e implementazione trasformano la descrizione in risorse reali.</p>
+          </article>
+          <article>
+            <small>06</small>
+            <div class="method-icon">▤</div>
+            <h3>Pixel</h3>
+            <p>La logica genera direttamente sincronismi VGA e colore.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="caso" class="shell section">
+      <div class="section-index">02</div>
+      <div class="case-grid">
+        <div class="case-copy">
+          <p class="mono-tag">UN CASO CONCRETO</p>
+          <h2>Il rimbalzo non è una funzione. È un circuito.</h2>
+          <p>
+            Nel software siamo abituati a descrivere il risultato. Qui proviamo invece
+            a identificare gli elementi fisici necessari per produrlo.
+          </p>
+        </div>
+
+        <div class="compare-card software">
+          <span class="card-label">PENSIERO SOFTWARE</span>
+          <pre><code>if (ball_x >= border) {
+  velocity_x = -velocity_x;
+}</code></pre>
+        </div>
+
+        <div class="vs">VS</div>
+
+        <div class="compare-card hardware">
+          <span class="card-label">PENSIERO HARDWARE</span>
+          <div class="logic-stack">
+            <div>POSIZIONE</div><i>↓</i>
+            <div>COMPARATORE</div><i>↓</i>
+            <div>COLLISIONE</div><i>↓</i>
+            <div>LOGICA DI CONTROLLO</div><i>↓</i>
+            <div>NUOVA DIREZIONE</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="percorso" class="section gallery-section">
+      <div class="shell">
+        <div class="section-head">
+          <div>
+            <p class="mono-tag">DAL FOGLIO ALLA FPGA</p>
+            <h2>La stessa funzione, quattro forme.</h2>
+          </div>
+          <p>
+            Questa sezione va costruita con materiali reali del progetto.
+            L'ideale è mostrare lo stesso sottocircuito lungo tutta la catena.
+          </p>
+        </div>
+
+        <div class="story-gallery">
+          <figure>
+            <div class="img-wrap"><img src="site/carta.svg" alt="Placeholder per schema su carta"></div>
+            <figcaption><b>01 / Carta</b><span>Il circuito nasce come ragionamento.</span></figcaption>
+          </figure>
+
+          <div class="gallery-arrow">→</div>
+
+          <figure>
+            <div class="img-wrap"><img src="site/digital.svg" alt="Placeholder per circuito Digital"></div>
+            <figcaption><b>02 / Digital</b><span>La logica viene costruita e verificata.</span></figcaption>
+          </figure>
+
+          <div class="gallery-arrow">→</div>
+
+          <figure>
+            <div class="img-wrap"><img src="site/vivado.svg" alt="Placeholder per Vivado"></div>
+            <figcaption><b>03 / Vivado</b><span>Il circuito viene sintetizzato e implementato.</span></figcaption>
+          </figure>
+
+          <div class="gallery-arrow">→</div>
+
+          <figure>
+            <div class="img-wrap"><img src="site/fpga.svg" alt="Placeholder per FPGA e monitor"></div>
+            <figcaption><b>04 / FPGA</b><span>La macchina produce davvero il gioco.</span></figcaption>
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <section class="section signal-section">
+      <div class="shell signal-grid">
+        <div>
+          <p class="mono-tag">DAL CLOCK AL PIXEL</p>
+          <h2>L'immagine non viene “disegnata”. Viene generata.</h2>
+        </div>
+        <div class="signal-diagram" aria-label="Flusso di generazione VGA">
+          <span>CLOCK</span><i></i>
+          <span>H / V COUNTERS</span><i></i>
+          <span>POSITION LOGIC</span><i></i>
+          <span>RGB + SYNC</span><i></i>
+          <span>VGA</span>
+        </div>
+      </div>
+    </section>
+
+    <section id="video" class="shell section video-section">
+      <div class="video-copy">
+        <p class="mono-tag">VIDEO DI PRESENTAZIONE</p>
+        <h2>Il progetto in due minuti.</h2>
+        <p>
+          Qui inseriremo il video finale: il gioco in funzione, il foglio,
+          Digital, il VHDL, Vivado e la FPGA collegata al monitor.
+        </p>
+      </div>
+
+      <div class="video-frame">
+        <div class="video-placeholder">
+          <span class="play">▶</span>
+          <strong>VIDEO</strong>
+          <small>Sostituire con embed YouTube non in elenco</small>
+        </div>
+      </div>
+    </section>
+
+    <section class="section heritage">
+      <div class="shell heritage-grid">
+        <div class="year-block">
+          <span>1976</span>
+          <small>BREAKOUT</small>
+        </div>
+        <div>
+          <p class="mono-tag">ARCHEOLOGIA TECNOLOGICA</p>
+          <h2>Un videogioco nato come macchina.</h2>
+          <p>
+            Programmable Logic Breakout torna alla relazione originaria fra regola di gioco,
+            circuito e immagine. Cinquant'anni dopo, una FPGA permette di studiare quella logica
+            non come nostalgia, ma come strumento contemporaneo di progettazione e comprensione.
+          </p>
+        </div>
+        <div class="year-block align-right">
+          <span>2026</span>
+          <small>FPGA</small>
+        </div>
+      </div>
+    </section>
+
+    <section class="section rambaldi-section">
+      <div class="shell rambaldi-grid">
+        <div>
+          <p class="mono-tag">PREMIO CARLO RAMBALDI</p>
+          <h2>Dare una forma fisica all'immaginazione.</h2>
+        </div>
+        <div class="rambaldi-copy">
+          <p class="rambaldi-lead">
+            Il legame con Carlo Rambaldi è metodologico:
+            partire da un comportamento immaginato e chiedersi
+            quale meccanismo reale possa renderlo visibile.
+          </p>
+          <p>
+            Nel progetto l'idea di gioco non rimane astratta:
+            viene tradotta in circuiti, temporizzazioni, segnali,
+            risorse logiche e infine in luce sullo schermo.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section team-section">
+      <div class="shell team-grid">
+        <div>
+          <p class="mono-tag">AUTORI</p>
+          <h2>Programmable Logic Breakout</h2>
+        </div>
+        <div class="team-list">
+          <div>
+            <strong>Francesco Sisini</strong>
+            <span>[ruolo breve]</span>
+          </div>
+          <div>
+            <strong>Valentina [COGNOME]</strong>
+            <span>[ruolo breve]</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section final-cta">
+      <div class="shell final-card">
+        <div>
+          <p class="mono-tag">APPROFONDIMENTI</p>
+          <h2>Apri il cofano.</h2>
+          <p>Il sito racconta il progetto. Il repository mostra davvero circuiti, VHDL e implementazione.</p>
+        </div>
+        <div class="final-buttons">
+          <a class="btn btn-primary" id="repo-link" href="#">Repository GitHub</a>
+          <a class="btn btn-ghost" href="#video">Video</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="shell">
+      <span>Programmable Logic Breakout · 2026</span>
+      <span>Progetto candidato al Premio Carlo Rambaldi</span>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,6 +1,6 @@
 document.addEventListener("DOMContentLoaded", () => {
   // Inserisci qui l'URL reale del repository.
-  const repositoryUrl = "https://github.com/INSERISCI-USERNAME/programmable-logic-breakout";
+  const repositoryUrl = "https://github.com/ValentinaSisini/programmable_logic_breakout";
 
   const repoLink = document.getElementById("repo-link");
 

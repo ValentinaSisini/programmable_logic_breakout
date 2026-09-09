@@ -242,17 +242,39 @@ h2{
 .gallery-section{background:#0d0f12}
 .story-gallery{
   display:grid;grid-template-columns:1fr 34px 1fr 34px 1fr 34px 1fr;
-  align-items:center
+  align-items:start
 }
-.story-gallery figure{margin:0}
+.story-gallery figure{
+  margin:0;
+  display:grid;
+  grid-template-rows:auto auto;
+}
 .img-wrap{
-  overflow:hidden;border:1px solid var(--line);background:#15181d;
-  box-shadow:0 20px 60px rgba(0,0,0,.2)
+  height:260px;              /* stessa altezza per tutte */
+  border:1px solid var(--line);
+  background:#15181d;
+  box-shadow:0 20px 60px rgba(0,0,0,.2);
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  overflow:hidden;
+}
+.img-wrap img{
+  width:100%;
+  height:100%;
+  object-fit:contain;        /* mostra tutta l'immagine senza tagliarla */
 }
 .story-gallery figcaption{display:grid;gap:4px;padding:14px 2px}
 .story-gallery figcaption b{font-size:.9rem}
 .story-gallery figcaption span{color:var(--muted);font-size:.84rem}
-.gallery-arrow{color:var(--acid);text-align:center;font:900 1.2rem "Courier New",monospace}
+.gallery-arrow{
+  color:var(--acid);
+  text-align:center;
+  font:900 1.2rem "Courier New",monospace;
+
+  align-self:start;
+  margin-top:120px;
+}
 
 .signal-section{background:var(--paper);color:var(--ink)}
 .signal-section .mono-tag{color:#6f770f}
@@ -362,4 +384,346 @@ h2{
   .signal-diagram{justify-content:flex-start}
   .final-card{grid-template-columns:1fr;padding:28px}
   .footer .shell{flex-direction:column}
+}
+
+/* ===== ICONE METODO ===== */
+
+.method-icon{
+  position:relative;
+  width:82px;
+  height:82px;
+  margin:28px 0 24px;
+
+  border:1px solid rgba(217,255,90,.42);
+  background:
+    radial-gradient(circle at center,
+      rgba(217,255,90,.09),
+      rgba(217,255,90,.025) 65%,
+      transparent 100%);
+
+  color:var(--acid);
+
+  box-shadow:
+    inset 0 0 18px rgba(217,255,90,.035),
+    0 0 20px rgba(217,255,90,.06);
+
+  font-size:0;
+}
+
+/* centraggio reale dei simboli */
+.method-icon::before{
+  position:absolute;
+  left:50%;
+  top:50%;
+  transform:translate(-50%,-50%);
+
+  display:block;
+  margin:0;
+  padding:0;
+
+  color:var(--acid);
+  font-family:"Courier New", monospace;
+  font-weight:900;
+  font-size:2rem;
+  line-height:1;
+  white-space:nowrap;
+}
+
+/* nessun secondo elemento normalmente */
+.method-icon::after{
+  content:none;
+}
+
+/* 01 — Funzione */
+.method-line article:nth-child(1) .method-icon::before{
+  content:"?";
+  font-size:2rem;
+}
+
+/* 02 — Carta */
+.method-line article:nth-child(2) .method-icon::before{
+  content:"✎";
+  font-size:2.15rem;
+}
+
+/* 03 — Digital: integrato logico con pin */
+.method-line article:nth-child(3) .method-icon::before{
+  content:"";
+  width:30px;
+  height:22px;
+
+  border:2px solid var(--acid);
+
+  box-shadow:
+    inset 0 0 0 4px rgba(217,255,90,.05);
+}
+
+/* pin dell'integrato */
+.method-line article:nth-child(3) .method-icon::after{
+  content:"";
+
+  position:absolute;
+  left:50%;
+  top:50%;
+  transform:translate(-50%,-50%);
+
+  width:48px;
+  height:32px;
+
+  background:
+    linear-gradient(var(--acid),var(--acid))
+      left 0 top 5px / 10px 2px no-repeat,
+
+    linear-gradient(var(--acid),var(--acid))
+      left 0 center / 10px 2px no-repeat,
+
+    linear-gradient(var(--acid),var(--acid))
+      left 0 bottom 5px / 10px 2px no-repeat,
+
+    linear-gradient(var(--acid),var(--acid))
+      right 0 top 5px / 10px 2px no-repeat,
+
+    linear-gradient(var(--acid),var(--acid))
+      right 0 center / 10px 2px no-repeat,
+
+    linear-gradient(var(--acid),var(--acid))
+      right 0 bottom 5px / 10px 2px no-repeat;
+}
+
+/* 04 — VHDL */
+.method-line article:nth-child(4) .method-icon::before{
+  content:"</>";
+  font-size:1.55rem;
+}
+
+/* 05 — FPGA */
+.method-line article:nth-child(5) .method-icon::before{
+  content:"⌗";
+  font-size:2.35rem;
+}
+
+/* 06 — Pixel */
+.method-line article:nth-child(6) .method-icon::before{
+  content:"▦";
+  font-size:2.25rem;
+}
+
+/* ===== AUTORI ===== */
+
+.authors-heading{
+  margin-bottom:42px;
+}
+
+.authors-heading h2{
+  font-size:clamp(2.4rem,4vw,4rem);
+  margin-bottom:0;
+}
+
+.authors-grid{
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:24px;
+}
+
+.author-card{
+  display:grid;
+  grid-template-columns:110px 1fr;
+  gap:24px;
+  align-items:center;
+
+  padding:24px;
+  border:1px solid var(--line);
+  background:#111418;
+}
+
+.author-card img{
+  width:110px;
+  height:110px;
+  object-fit:cover;
+  border:1px solid #3a4148;
+}
+
+.author-card h3{
+  margin:0 0 8px;
+  font-size:1.35rem;
+}
+
+.author-card p{
+  margin:0;
+  color:var(--muted);
+  line-height:1.55;
+}
+
+@media (max-width:760px){
+
+  .authors-grid{
+    grid-template-columns:1fr;
+  }
+
+  .author-card{
+    grid-template-columns:86px 1fr;
+  }
+
+  .author-card img{
+    width:86px;
+    height:86px;
+  }
+}
+
+/* ===== DAL CLOCK AL PIXEL ===== */
+
+.signal-section{
+  background:var(--paper);
+  color:var(--ink);
+  padding:85px 0;
+}
+
+.signal-layout{
+  display:grid;
+  grid-template-columns:.8fr 1.2fr;
+  gap:70px;
+  align-items:center;
+}
+
+.signal-copy h2{
+  font-size:clamp(2.5rem,4.5vw,4.6rem);
+  margin-bottom:22px;
+}
+
+.signal-copy p:last-child{
+  max-width:520px;
+  color:#73777b;
+  font-size:1.05rem;
+}
+
+.signal-flow{
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  gap:10px;
+}
+
+.signal-flow > div{
+  min-width:95px;
+  padding:16px 12px;
+  border:1px solid #a8aaa5;
+  text-align:center;
+}
+
+.signal-flow strong{
+  display:block;
+  color:var(--ink);
+  font:800 .78rem "Courier New", monospace;
+}
+
+.signal-flow small{
+  display:block;
+  margin-top:5px;
+  color:#858984;
+  font:700 .62rem "Courier New", monospace;
+}
+
+.signal-flow > span{
+  color:#7f837e;
+  font:900 1.2rem "Courier New", monospace;
+}
+
+@media (max-width:900px){
+  .signal-layout{
+    grid-template-columns:1fr;
+  }
+
+  .signal-flow{
+    flex-wrap:wrap;
+    justify-content:flex-start;
+  }
+}
+
+/* ===== CONTATTI ===== */
+
+.contact-section{
+  background:#0d0f12;
+  border-top:1px solid var(--line);
+}
+
+.contact-heading{
+  margin-bottom:38px;
+}
+
+.contact-heading h2{
+  margin-bottom:0;
+  font-size:clamp(2.4rem,4vw,4rem);
+}
+
+.contact-links{
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:18px;
+}
+
+.contact-item{
+  display:flex;
+  align-items:center;
+  gap:20px;
+
+  padding:24px;
+
+  border:1px solid var(--line);
+  background:#111418;
+
+  text-decoration:none;
+
+  transition:
+    border-color .2s ease,
+    transform .2s ease,
+    background .2s ease;
+}
+
+.contact-item:hover{
+  border-color:var(--acid);
+  background:#15191d;
+  transform:translateY(-2px);
+}
+
+.contact-icon{
+  display:grid;
+  place-items:center;
+
+  flex:0 0 58px;
+  width:58px;
+  height:58px;
+
+  border:1px solid rgba(217,255,90,.4);
+
+  color:var(--acid);
+
+  font:900 1.5rem "Courier New", monospace;
+}
+
+.instagram-icon svg{
+  width:27px;
+  height:27px;
+
+  fill:none;
+  stroke:var(--acid);
+  stroke-width:1.8;
+}
+
+.contact-item strong{
+  display:block;
+  margin-bottom:4px;
+  font-size:1rem;
+}
+
+.contact-item div span{
+  color:var(--muted);
+  font-size:.95rem;
+}
+
+@media (max-width:760px){
+
+  .contact-links{
+    grid-template-columns:1fr;
+  }
+
 }

@@ -1,6 +1,6 @@
 # Programmable Logic Breakout
 
-Visit the site: [PLB site] (https://valentinasisini.github.io/programmable_logic_breakout/)
+Visit the site: [PLB site](https://valentinasisini.github.io/programmable_logic_breakout/)
 
 `Programmable Logic Breakout` is a hands-on FPGA project built around a simple idea: understand a digital system by constructing it step by step, from the first logic sketch to a circuit running on real hardware.
 
